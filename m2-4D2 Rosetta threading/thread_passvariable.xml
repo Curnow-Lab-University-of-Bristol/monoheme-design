@@ -1,0 +1,23 @@
+<ROSETTASCRIPTS>
+	<SCOREFXNS>
+		<ScoreFunction name="myscore" weights="ref2015">
+		</ScoreFunction>
+	</SCOREFXNS>
+	<RESIDUE_SELECTORS>
+	</RESIDUE_SELECTORS>
+	<TASKOPERATIONS>
+		<ExtraRotamersGeneric name="extra_rot" ex1="1" ex2="1" ex1aro="1" ex2aro="1"/>
+	</TASKOPERATIONS>	
+	<FILTERS>
+	</FILTERS>
+	<SIMPLE_METRICS>
+	</SIMPLE_METRICS>
+	<MOVERS>
+		<SimpleThreadingMover name="inv_m4D2" pack_neighbors="true" neighbor_dis="6.0" start_position="1" thread_sequence="%%sequence%%" scorefxn="myscore" skip_unknown_mutant="true" pack_rounds="5" />
+        		<FastRelax name="fastrelax_nodes" scorefxn="myscore" disable_design="true" repeats="5" task_operations="extra_rot" />
+	</MOVERS>
+	<PROTOCOLS>
+		<Add mover_name="inv_m4D2"/>
+		<Add mover_name="fastrelax_nodes"/>
+	</PROTOCOLS>
+</ROSETTASCRIPTS>
