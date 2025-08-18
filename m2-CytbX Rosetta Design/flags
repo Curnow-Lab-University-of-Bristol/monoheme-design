@@ -1,0 +1,15 @@
+-parser:protocol CytbX_Mono_Redesign.xml
+-s CytbX_Rosetta_Monoheme2.pdb
+-in:file:native CytbX_Rosetta_Monoheme2.pdb 
+-in:membrane
+-mp:scoring:hbond true
+-mp:setup:spanfiles 4D2_correct.span
+-mp:lipids:has_pore false
+-in:ignore_unrecognized_res
+-extra_res_fa HEMred.params
+-relax:jump_move true
+-nstruct 500
+-out:path:all output/
+-out:file:scorefile score.sc 
+-packing:pack_missing_sidechains 0  
+-mute core.select.residue_selector.SecondaryStructureSelector
