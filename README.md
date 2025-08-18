@@ -5,4 +5,5 @@ This work uses BioDC version 2.0 available here: (https://github.com/Mag14011/Bi
 
 | Filename or Directory | Description |
 |-----------------------|-------------|
-|
+|Protein Science_Hardy.pdf| Publication using the files and scripts found here|
+
