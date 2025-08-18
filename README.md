@@ -3,7 +3,7 @@ This repository collects data and code from Hardy et al (2024) <i>Delineating re
 
 This work uses BioDC version 2.0 available here: (https://github.com/Mag14011/BioDC)
 
-| Filename or Directory | Description |
+| Filename or Directory | Description & Directory contents |
 |-----------------------|-------------|
 |Protein Science_Hardy.pdf| Publication using the files and scripts found here|
 
